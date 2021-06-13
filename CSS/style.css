@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 *{
     margin: 0;
     padding: 0;
@@ -73,17 +74,16 @@ ul.nav li{
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
-    border: 3px solid black;
+    border: none;
     font-weight: 700;
-    color: goldenrod;
-    
+    color: goldenrod; 
 }
+
 .centered button:hover{
-    background: none;
-    color: goldenrod;
+    background: linear-gradient(45deg,rgb(53, 38, 0), rgb(255, 217, 0));
+    color: black;
     transition: .3s;
     padding: 12px 70px;
-    border: 3px solid black;
 }
 .divider{
     height: 3rem;
@@ -131,3 +131,82 @@ ul.nav li{
     width: 200px;
    /* box-shadow: 2px 2px 15px; */
 }
+
+
+/* -----------------------------------------------social icons--------------------------------------------- */
+footer{
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+footer p{
+    color: whitesmoke;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.social-icons {
+    padding: 0 10px;
+    list-style: none;
+    margin: 1em;
+    margin-left: 40px;
+}
+.social-icons li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+      
+}
+.social-icons a::before {
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, rgb(87, 63, 2), rgb(255, 217, 0));
+    transition: all 265ms ease-out;
+}
+        
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+        
+.social-icons a:hover i {   
+    transform: scale(2);
+    color: goldenrod;
+    background: -webkit-linear-gradient(45deg,rgb(87, 63, 2), rgb(255, 217, 0) );
+    background-blend-mode: multiply;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+.sitemap{
+    text-align: center;
+    list-style: none;  
+}
+.sitemap a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sitemap a:hover{
+    color: goldenrod;
+}
+   
+  
